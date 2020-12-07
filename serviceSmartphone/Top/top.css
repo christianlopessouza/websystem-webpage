@@ -1,0 +1,37 @@
+.nav .separator{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.nav .container{
+    height: 100%;
+}
+
+.nav .separator img{
+    width: 250px;
+}
+
+.nav .separator p{
+    color: #073a51;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+@media(max-width:530px){
+    .nav .separator{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .nav .separator p{
+        margin-top: -30px;
+        font-size: 18px;
+
+    }
+
+}

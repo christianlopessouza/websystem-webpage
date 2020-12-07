@@ -1,0 +1,113 @@
+.metodology .separator{
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin-top: 80px;
+}
+.metodology .subTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;
+    align-items: center;
+
+}
+
+.metodology .subTitle .image{
+    width: 50px;
+    content:url("../src/img/logoTransition.png");
+}
+
+.metodology .title h1{
+    font-size: 40px;
+    color: #04363C;
+}
+
+.metodology .subTitle h1{
+    font-size: 52px;
+    color: #04363C;
+    text-align: center;
+}
+
+.metodology .subTitle h3{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color:#9A9A9A;
+}
+
+.metodology .subTitle .paragraph{
+    width: 100%;
+    max-width: 780px;
+    font-size: 22px;
+    color: #3E5255;
+    text-align: center;
+}
+
+
+.metCard{
+    height: 200px;
+    width: 150px;
+    text-align:center; 
+    font-size: 19px;
+    font-weight: 300;
+    color: #858585;
+    justify-content: center;
+
+
+}
+
+.metCard img{
+    margin-bottom: 15px;
+}
+
+.metodology .subTitle .paragraph {
+    width: 100%;
+    max-width: 780px;
+    font-size: 22px;
+    color: #3E5255;
+    text-align: center;
+}
+
+.metodology .met{
+    display: grid;
+    height: auto;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    padding-top: 60px;
+    justify-items: center;
+     
+}
+
+
+
+@media (max-width:650px){
+    .metodology .met{
+        margin-top: 40px;
+        grid-template-columns:  1fr 1fr;
+        grid-template-columns:  1fr 1fr;
+        
+
+    }
+
+    .metodology .subTitle h1{
+        margin-top: 15px;
+    }
+
+    .metodology .subTitle h3{
+        margin-top: 15px;
+    }
+
+    .metodology .subTitle p{
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:440px){
+    .metodology .separator{
+        padding: 0px 20px 0px 20px;
+    }
+
+    .metodology .met{
+        margin-top: 100px;
+    }
+}    

@@ -1,0 +1,176 @@
+/* parte de baixo */
+
+.banner .masterContainer{
+    display: grid;
+    height: 675px;
+    grid-template-columns: 1.3fr 1fr; 
+    grid-template-areas: 
+        "container1 container2"
+    ;background: #34ADBE; 
+     
+}
+
+.banner .container1{
+    background: url("../src/img/R2.png"), rgb(255,255,255) linear-gradient(162deg, rgba(255,255,255,1) 37%, rgba(240,240,240,1) 100%);
+    grid-area: container1;
+    border-radius: 0px 20px 20px 0px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+.banner .container2{
+    background: url("../src/img/R3.png");
+    background-position: -180px; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    grid-area: container2;
+}
+
+
+/* parte de baixo */
+
+.masterBanner{
+    position: relative;
+}
+
+.infoBanner{
+    height: auto;   
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.infoBanner .separator{ /* Div que separa Banner 1 e 2 */ 
+    height: 65px;
+    width: 95%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+    "containerText containerImage";
+}
+
+.banner1 .logo{ /* Logo do Banner 1 */ 
+    content: url("../src/img/logo.png");
+    width:260px ;
+}
+
+.banner1 p{
+    width: 290px;
+    line-height: 25px;
+    font-size: 22px;
+    color: #04363C;
+    margin-top: 25px;
+}
+
+.banner1 .title{
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 72px;
+    color: #04363C;
+    margin-top: 80px;
+    letter-spacing: -3px;
+
+} 
+
+.banner1 .servicesButton{
+    padding: 19px 15px 15px 15px;
+    width: 200px;
+    border:none;
+    color: #04363C;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 80px;
+    background-color: #09E2AF;
+    margin-top: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.banner1 .servicesButton:hover{
+    background-color: rgb(31, 180, 145);
+
+}
+
+.banner1 {
+    grid-area: containerText;
+
+}
+
+.banner2{
+    grid-area: containerImage;
+}
+
+.lineTransition{
+    height: 6px;
+    background: #09E2AF;
+}
+
+@media(max-width:710px){
+    .banner1 .title{
+        margin-top: 40px;
+    
+    } 
+
+    .banner1 p{
+        width: 95%;
+    }
+}
+
+@media(max-width:550px){
+    .banner .masterContainer{
+        grid-template-areas: 
+        "container2"
+        "container1";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr; 
+        height: 700px;
+
+    }    
+
+    .banner1 p{
+        max-width: 400px;
+    }
+
+
+
+
+    .infoBanner .separator{ /* Div que separa Banner 1 e 2 */ 
+        grid-template-areas: 
+        "containerImage"
+        "containerText";        
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr; 
+        height: 700px;
+
+
+    }
+
+    .banner .container2{
+        background-position:-80px; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: 200%; /* Resize the background image to cover the entire container */
+    }
+
+    .banner .container1{
+        border-radius: 0px 20px 0px 0px;
+
+    }
+
+
+}
+
+@media(max-width:450px){
+    .infoBanner .separator{
+        height: 850px;
+    }
+
+    .banner .masterContainer{
+        height: 850px;
+    }
+}

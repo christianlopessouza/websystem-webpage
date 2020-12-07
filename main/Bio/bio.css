@@ -1,0 +1,42 @@
+
+.bio .separator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    justify-content: space-between;
+    color: #fff;
+    max-width: 850px;
+    padding: 50px;
+
+
+}
+
+.bio .container{
+    background: url("../src/img/bioBck.png");
+    background-size: cover; 
+}
+
+.bio .image{
+    content: url("../src/img/logoDot.png");
+    width: 60px;
+}
+
+.bio h1{
+    font-size: 52px;
+    padding-bottom: 30px; 
+}
+
+.bio p{
+    font-size: 22px;
+    padding-top: 30px; 
+
+}
+
+@media(max-width:440px){
+    .bio .separator{
+        padding: 60px 20px 60px 20px;
+    }
+
+}

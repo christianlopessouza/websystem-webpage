@@ -1,0 +1,98 @@
+.nav{
+    height: auto;
+    -webkit-box-shadow: 0px 4px 15px -5px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 4px 15px -5px rgba(0,0,0,0.19);
+    box-shadow: 0px 4px 15px -5px rgba(0,0,0,0.19);
+    background: #fff;
+    
+}
+
+.nav .container{
+    padding: 25px;
+
+}
+
+.nav a{
+    text-decoration: none;
+    color:#04363C;
+    font-weight: 500;
+}
+
+.nav ul{
+    list-style: none;
+    font-size: 22px;
+    color:#04363C;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.nav li+li{
+    margin-left: 50px;
+}
+
+.nav .subtitle{
+    font-size: 30px;
+    font-weight: 700;
+    color:#04363C;
+}
+
+.nav .bar{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.nav button{
+    color:#0DC5DF;
+    border: 3px solid #0DC5DF;
+    background: transparent;
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+    padding-top: 14px;
+    outline: none;
+    transition: 0.1s;
+}
+
+.nav button:hover{
+    background: #0DC5DF;
+    color: #fff;
+
+}
+
+.nav .buttonOut{
+    display: none;
+
+}
+
+
+@media(max-width:1154px){
+    .nav ul{
+        margin-top:20px;
+    }
+}
+
+@media(max-width:830px){
+    .nav .buttonOut{
+        display: inline;
+        margin-top: 15px;
+    }
+
+    .nav .buttonIn{
+        display: none;
+    }
+
+}
+
+@media(max-width:560px){
+    .nav{
+        display: none;
+    }
+}

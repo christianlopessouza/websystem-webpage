@@ -1,0 +1,103 @@
+.navMobile .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.navMobile .bar-active{
+    display: none;
+}
+
+.navMobile .bar{
+    padding: 25px;
+    height: auto;
+    -webkit-box-shadow: 0px 4px 15px -5px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 4px 15px -5px rgba(0,0,0,0.19);
+    box-shadow: 0px 4px 15px -5px rgba(0,0,0,0.19);
+
+
+}
+
+.navMobile .menuOpen{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navMobile a{
+    text-decoration: none;
+    color:#04363C;
+    font-weight: 500;
+}
+
+.navMobile ul{
+    list-style: none;
+    font-size: 22px;
+    color:#04363C;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    
+}
+
+.navMobile li{
+    padding: 10px;
+
+}
+
+.nav li+li{
+    margin-left: 50px;
+}
+
+.navMobile .subtitle{
+    font-size: 25px;
+    font-weight: bold;
+    color:#04363C;
+}
+
+.nav .bar{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.navMobile i{
+    font-size: 25px;
+    color:#04363C;
+}
+
+.navMobile .hamb{
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    z-index:2;
+}
+
+.navMobile button{
+    color:#0DC5DF;
+    border: 3px solid #0DC5DF;
+    background: transparent;
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+    padding-top: 14px;
+    outline: none;
+    transition: 0.1s;
+}
+
+.navMobile button:hover{
+    background: #0DC5DF;
+    color: #fff;
+
+}
+
+@media(min-width:561px){
+    .navMobile{
+        display: none;
+    }
+}

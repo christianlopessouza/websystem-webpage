@@ -1,0 +1,101 @@
+.topnav .separator{
+    height: 100%;
+    width: 95%;
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+     "telefone logoSocial";
+     align-items: center;
+     margin-top: 4px;
+}
+
+.topnav .container{
+    background-color: #073A51;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.topnav .numTelefone{
+    grid-area: telefone; 
+
+}
+
+.topnav .socialMedia{
+    grid-area: logoSocial;
+    justify-self: end;    
+}
+
+.topnav .socialMedia img{
+    width: 45px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.topnav .numTelefone{
+    color: #fff;
+}
+
+.numTelefone{
+    display: flex;
+}
+
+.numTelefone .number{
+    font-size: 24px;
+    margin-top: -3px;
+}
+
+.numTelefone .phone{
+    font-size: 26px;
+    margin-right: 15px;
+
+
+}
+
+@media(max-width:440px){
+    .topnav .separator{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+         "telefone"
+         "logoSocial";   
+    }
+
+    .topnav .container{
+        height: auto;
+        border-radius: 0px 0px 0px 20px;
+    }
+
+    .topnav .socialMedia{
+        justify-self: center;   
+        margin-top: 10px; 
+    } 
+
+    .topnav .numTelefone{
+        justify-self: center;    
+
+    }
+
+}
+@media(max-width:550px){
+    .topnav .container{
+        border-radius: 0px 0px 0px 20px;
+    }
+
+    .topnav .separator{
+        display: flex;
+        justify-content: center;
+    }
+
+    .topnav{
+        background:#34ADBE;
+    }
+
+    .topnav .numTelefone{
+        display: none;
+    }
+
+
+}

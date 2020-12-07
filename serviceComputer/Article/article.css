@@ -1,0 +1,133 @@
+.article .separator{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 1300px;
+    align-items: center;
+    justify-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.article .container{
+    height: 100%;
+}
+
+.article .separator .image{
+    justify-self: center;
+}
+
+.article .separator img{
+    width: 550px;
+
+}
+.article .separator .text{
+    max-width: 95%;
+    justify-self: left;
+}
+
+
+.article p{
+    font-size: 24px;
+    margin-top:15px;
+    color:#47b4b6;
+
+}
+
+.article h2{
+    font-size: 64px;
+    margin-top:10px;
+    color: #045657;
+    line-height: 65px;
+
+}
+
+.article b{
+    font-size: 25px;
+    color: #045657;
+}
+
+.article button{
+    cursor: pointer;
+    padding: 15px 30px 10px 30px;
+    font-size: 22px;
+    border: none;
+    border-radius: 50px;
+    background-color: #045657;
+    color: #fff;
+    font-weight: 600;
+    outline: none;
+    transition: 0.2s;
+    margin-right: 5px;
+}
+
+.article .circle{
+    border: 2px solid #045657;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 7px 0px 0px 0px ;
+    font-size: 28px;
+    color:#045657;
+    background-color: transparent;
+}
+
+.article .circle:hover{
+    background-color: #045657;
+    color: #fff;
+
+}
+
+.article button:hover{
+    background-color: #118b8d;
+
+}
+
+.buttons{
+    display: flex;
+    margin-top:30px;
+}
+
+@media(max-width:1430px){
+    .article .separator img{
+        width:100%;
+    
+    }
+}
+
+@media(max-width:840px){
+    .article .separator{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "imageArticle"
+        "textArticle";
+        width: 90%;
+        align-items: center;
+        justify-items: center;
+        padding: 0px 20px 0px 20px;
+    } 
+    
+    .article .text{
+        grid-area: textArticle;
+    }
+    
+    .article .image{
+        grid-area: imageArticle;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .article .buttons{
+        flex-wrap: wrap; 
+        
+    }
+
+    .buttons .main{
+        margin-bottom: 10px;
+    }
+
+    .article .social  {
+        display: flex;
+    }
+}
