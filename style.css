@@ -1,0 +1,80 @@
+*{
+    font-family: 'TT Commons';
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.fixed{
+    position: fixed;
+    z-index: 30;
+    top:0;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+@font-face{
+    font-family: 'ProductSans';
+    src: url('src/fonts/product_sans_regular.woff');
+}
+
+@font-face{
+    font-family: 'ProductSans';
+    src: url('src/fonts/product_sans_bold.woff');
+    font-weight: bold;
+
+}
+
+@font-face{
+    font-family: 'ProductSans';
+    src: url('src/fonts/product_sans_italic.woff');
+    font-weight: 100;
+
+}
+
+@font-face{
+    font-family: 'TT Commons';
+    src:  url('src/fonts/ttcommons-regular-webfont.woff');
+
+
+}
+
+@font-face{
+    font-family: 'TT Commons';
+    src:  url('src/fonts/ttcommons-medium-webfont.woff');
+    font-weight: 300;
+
+}
+
+@font-face{
+    font-family: 'TT Commons';
+    src:  url('src/fonts/ttcommons-bold-webfont.woff');
+    font-weight: bold;
+
+}
+
+@font-face{
+    font-family: 'TT Commons';
+    src:  url('src/fonts/ttcommons-black-webfont.woff');
+    font-weight: 800;
+
+}
+
+@font-face{
+    font-family: 'TT Commons';
+    src:  url('src/fonts/ttcommons-extrabold-webfont.woff');
+    font-weight: 900;
+
+}
+
+
+
+
